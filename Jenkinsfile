@@ -8,7 +8,7 @@ pipeline {
 		      }}
 		stage('Build') {
 	           steps {
-			  sh '/home/nidhi/Documents/Devops_Software/apache-maven-3.9.3/bin install'
+			  sh '/home/nidhi/Documents/Devops_Software/apache-maven-3.9.3/bin/mvn install'
 	                 }}
 		stage('Deployment'){
 		    steps {
