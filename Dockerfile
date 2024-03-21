@@ -5,6 +5,6 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y openssh-server
 RUN apt-get install -y net-tools
 COPY src/main/webapp/WEB-INF/web.xml /usr/share/nginx/html/
 RUN chmod 644 /usr/share/nginx/html/web.xml
-EXPOSE 8000
+EXPOSE 80
 ENTRYPOINT service nginx start && bash
 
